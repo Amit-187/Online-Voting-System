@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    <header class="head">
+        <h1 class="h1">Online Voting System</h1>
+        <hr>
+    </header>
+    <img src="image/vote1.png" id="bgimg">
+    <section class="frm">
+        <form action="api/login.php" method="post">
+            <h2>Login Page</h2>
+            <input type="text" placeholder="Mobile" name="mobile"  class="inpt" required><br>
+            <input type="password" placeholder="Enter Password" name="password" class="inpt" required><br>
+            <select id="vote" name="role" class="inpt">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br>
+            <button class="btn" type="submit" class="inpt">Login</button><br>
+            <p>Don't have login id? <a href="route/registration.html">Register now</a></p>
+        </form>
+    </section>
+</div>
+</body>
+</html>

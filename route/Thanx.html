@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank-you</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <style>
+        body{
+            background-color: rgb(236, 217, 217);
+            }
+
+        #h1{
+            margin-top: 35px;
+            }
+
+        #thnx{
+            font-size: 50px;
+        }
+
+        #thnx-box{
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+        .btn{
+            width: 10%;
+            height: 40px;
+            border-radius: 50px;
+            background-color: #088178;
+            color: whitesmoke;
+            text-shadow: 1px 1px 2px black;
+            margin-left: 25%;
+            margin-top: 20px;
+            }
+
+        .feedback{
+            float: left;
+            margin-left: 22%;
+            padding: 10px;
+            border: 0.5px solid rgb(230, 219, 219);
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px 5px rgb(199, 177, 177);
+        }
+
+        #sbmt{
+            width: 50%;
+            height: 40px;
+            border-radius: 50px;
+            background-color: #088178;
+            color: whitesmoke;
+            text-shadow: 1px 1px 2px black;
+        }
+
+    </style>
+
+    <div class="box">
+        <center>
+            <h1 id="h1">Online Voting System</h1>
+            <hr>
+        </center>
+        <img src="../image/vote1.png" id="bgimg">
+        <div id="thnx-box">
+            <h1 id="thnx">Thank You for Casting <br> Your Important Vote!</h1>
+        </div>
+       <a href="logout.php"><button class="btn" id="lgout">LOGOUT</button></a>  
+       <form action="#">
+        <div class="feedback"><h3>Feedback</h3>
+            <textarea name="" id="feed" cols="30" rows="5" placeholder="Write Your Experience!"></textarea><br><br>
+            <button id="sbmt">Submit</button>
+    </form>
+    </div>        
+    </div>
+</body>
+</html>

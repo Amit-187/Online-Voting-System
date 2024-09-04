@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page
+    </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <center>
+    <div class="box">
+    <header class="head">
+        <h1 class="h1">Online Voting System</h1>
+        <hr>
+    </header>
+    <img src="../image/vote1.png" id="bgimg">
+    <section class="frm">
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <h2>Registration Page</h2>
+            <input type="text" placeholder="Name" name="name" class="inpt2" required>
+            <input type="number" class="inpt2" name="mobile" placeholder="Mobile" required><br>
+            <input type="password" placeholder="Enter Password" name="password" class="inpt2" required>
+            <input type="password" placeholder="Confirm Password" name="cpassword" class="inpt2"><br>
+            <input type="text" placeholder="Address" name="address" class="inpt" required><br>
+            <select id="vote" name="role" class="inpt">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br>
+            <input type="file" class="inpt file" name="photo" required><br>
+            <button class="btn" type="submit" class="inpt">Register</button><br>
+            <p><b>Already Registered? <a href="../">Login </a></b></p>
+        </form>
+    </section>
+</div>
+</center>
+</body>
+</html>
